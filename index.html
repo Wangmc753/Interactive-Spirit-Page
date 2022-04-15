@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<body id = "body">
+	    <button onclick = "text()">Print</button>
+	    <button onclick = "randColor()">Random Color</button>
+	    <button onclick = "chooseColor()">Choose Color</button>
+		<script>
+		    //Add your code here:
+		    function chooseColor(){
+		        var col = prompt("What color do you want?");
+		        document.getElementById("body").style.color = col;
+		      //  var d = document.getElementById("body");
+		      //  d.style.color = col;
+		    }
+		    function randColor(){
+		        var num = Math.floor(Math.random() * 6);
+		        const list = ["red", "orange", "yellow", "green", "blue"];
+		        if (num == 0){
+		            var d = document.getElementById("body");
+		            d.style.color = list[0];
+		        }
+		        if (num == 1){
+		            var d = document.getElementById("body");
+		            d.style.color = list[1];
+		        }
+		        if (num == 2){
+		            var d = document.getElementById("body");
+		            d.style.color = list[2];
+		        }
+		        if (num == 3){
+		            var d = document.getElementById("body");
+		            d.style.color = list[3];
+		        }
+		        if (num == 4){
+		            var d = document.getElementById("body");
+		            d.style.color = list[4];
+		        }
+		    }
+		    function text(){
+		        var one = document.createElement("h1");
+		        one.innerHTML = "Go Broncos";
+		        document.body.appendChild(one);
+		    }
+		</script>
+	</body>
+</html>
